@@ -41,6 +41,11 @@ int main(void) {
     // Load user data from the file when the program starts
     loadUserData();
 
+    printf("\t\t------------\n");
+    printf("\t\tTEXT ANALYZER\n");
+    printf("\t\t------------\n");
+
+
     while (1) {
         if (currentUserIndex == -1) {
             printf("\n1. Login\n");
@@ -95,7 +100,7 @@ int main(void) {
                 }
                 text[i] = '\0';
 
-                printf("Text from the file:\n%s\n", text);
+                printf("\n\nText from the file:\n%s\n", text);
 
                 fclose(file);
             }
